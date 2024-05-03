@@ -1,0 +1,56 @@
+.introduction-container {
+    background-color: var(--yellow);
+}
+
+.intro-title {
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black,
+        -0.5px -0.5px black, 0.5px 0.5px black, -0.5px 0.5px black, 0.5px -0.5px black;
+    line-height: 1.6;
+    max-width: 50%;
+    font-size: 3.2vw;
+}
+
+.intro-desc {
+    line-height: 2.2;
+    max-width: 65%;
+    color: var(--dark-grey);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.intro-img {
+    width: 50%;
+}
+
+@media screen and (max-width: 770px) {
+    .intro-title {
+        text-shadow: 0 0 0;
+        font-weight: bold;
+        max-width: 70%;
+    }
+
+    .intro-desc {
+        max-width: 85%;
+        font-size: 0.7rem;
+    }
+
+    .intro-img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .intro-title {
+        max-width: 90%;
+        font-size: 5vw;        
+    }
+
+    .intro-desc {
+        max-width: 950%;
+        font-size: 3.3vw;
+    }
+    
+    .intro-img {
+        width: 90%;
+    }
+}

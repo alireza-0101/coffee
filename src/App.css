@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'Yekan Bakh';
+    src: local('YekanBakh-Regular'),
+        url('../public/fonts/YekanBakh-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../public/fonts/YekanBakh-Regular.woff2') format('woff2'),
+        url('../public/fonts/YekanBakh-Regular.woff') format('woff'),
+        url('../public/fonts/YekanBakh-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --theme-color: #FFDD00;
+    --white: #ffffff;
+    --black: #0a0a0a;
+    --light-black: #353535;
+    --green: #60BD10;
+    --yellow: #FFFCE6;
+    --yellow-2: #f3b63d;
+    --pink: #ffcece;
+    --light-red: #ff7a7a;
+    --red: #ff2626;
+    --very-light-grey: #f7f7f7;
+    --light-grey: #ececec;
+    --grey: #bdbdbd;
+    --dark-grey: #636363;
+    --body-bg: #F6F6F6;
+}
+
+*,
+input,
+select {
+    font-family: 'Yekan Bakh', 'vazir';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+body {
+    background-color: var(--body-bg);
+    position: relative;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+    display: inline-block;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--light-grey);
+    color: #f5f0e9;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--grey);
+}
+
+::selection {
+    background-color: var(--theme-color);
+    color: var(--black);
+    font-weight: bold;
+}
+
+.bg-theme {
+    background-color: var(--theme-color) !important;
+    transition: 0.5s;
+}
+
+.text-theme {
+    color: var(--theme-color) !important;
+    transition: 0.5s;
+}
+
+.border-theme {
+    border: var(--theme-color) 1px solid !important;
+    transition: 0.5s;
+}
+
+.border-theme-2 {
+    border: var(--theme-color) 2px solid !important;
+    transition: 0.5s;
+}
+
+.bg-theme:hover,
+.text-theme:hover {
+    opacity: 100% !important;
+    transform: scale(1.03);
+}
+
+.pro-users-slider .swiper-slide,
+.last-users-slider .swiper-slide {
+    width: 200px !important;
+}
+
+.share-user-btn,
+.user-follow-icon-btn {
+    width: 40px;
+    height: 40px;
+}
+
+.banner {
+    max-height: 220px;
+}
+
+.profile {
+    padding-bottom: 10rem;
+}
+
+.profile-photo-wrap {
+    position: absolute;
+    top: 9vw;
+
+}
+
+.profile-photo {
+    width: 150px;
+    max-width: 25vw;
+    margin-bottom: 7px;
+}
+
+.show-more-btn {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.show-more-btn:hover {
+    transform: scale(1.02);
+}
+
+.coffee-count-input,
+.set-number-to-coffe-count {
+    width: 35px;
+    height: 35px;
+}
+
+.set-number-to-coffe-count {
+    cursor: pointer;
+}
+
+.show-for-developer-check-box {
+    font-size: 0.9rem;
+}
+
+.account-sidebar-items {
+    transition: 0.5s;
+}
+
+.account-sidebar-items:hover {
+    background-color: var(--body-bg);
+    transform: scale(1.01);
+}
+
+.account-sidebar-items.active {
+    background-color: var(--theme-color) !important;
+}
+
+.close-account-sidebar {
+    filter: drop-shadow(0 0 0.85rem var(--black));
+    cursor: pointer;
+}
+
+.user-improvment-box {
+    background-color: var(--light-grey);
+    transition: 0.5s;
+}
+
+.user-improvment-box:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.data-table-wrap button,
+.modal-btn {
+    border: none;
+    padding: 0.4rem 1.2rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    transition: 0.5s;
+    background-color: var(--dark-grey);
+    color: var(--white);
+    border-radius: 2px;
+    opacity: 70%;
+}
+
+.data-table-wrap button:hover,
+.modal-btn:hover {
+    transform: scale(1.05);
+    opacity: 100%;
+    background-color: var(--dark-grey) !important;
+}
+
+.theme-change-btn .icon {
+    color: var(--black) !important;
+}
+
+.theme-change-btn,
+.support-btn {
+    z-index: 999;
+    cursor: pointer;
+}
+
+.support-btn {
+    padding: 1rem;
+    opacity: 85%;
+}
+
+.full-box-modal {
+    padding: 0 !important;
+}
+
+.full-box-modal button:hover {
+    transform: none;
+    opacity: 85%  !important;
+}
+
+@media screen and (max-width: 500px) {
+    .profile {
+        padding-bottom: 7rem;
+    }
+
+    .profile-datas {
+        font-size: 0.8rem !important;
+    }
+
+    .profile-datas h3 {
+        font-size: 1.2rem !important;
+    }
+
+    .theme-change-btn .icon {
+        font-size: 12px !important;
+    }
+
+    .support-btn {
+        padding: 0.8rem;
+        width: 50px;
+        height: 50px;
+    }
+
+    .support-btn .icon {
+        font-size: 16px !important;
+    }
+}

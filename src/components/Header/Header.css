@@ -1,0 +1,117 @@
+.header {
+    border-radius: 50rem;
+    position: relative;
+    background-color: var(--very-light-grey);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    margin-top: 1.7rem;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.header-logo {
+    width: 2.6rem;
+    margin-right: 0.5rem;
+    margin-left: 2.5rem;
+}
+
+.header-action {
+    position: absolute;
+    left: 1.8rem;
+}
+
+.header-action ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 0.3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.header-action ul li {
+    font-weight: bold;
+    color: var(--black);
+}
+
+.header-action ul li .login-btn {
+    padding: 0.4rem 1.5rem;
+    border-radius: 555rem;
+    transition: 0.5s;
+}
+
+.header-action ul li .login-btn:hover {
+    color: unset;
+    background-color: var(--body-bg);
+}
+
+.header-action ul li .register-btn {
+    background-color: var(--theme-color);
+    padding: 0.4rem 1.5rem;
+    border-radius: 555rem;
+    transition: 0.5s;
+}
+
+.header-action ul li .register-btn:hover {
+    transform: none;
+    color: unset;
+    transform: scale(1.03);
+}
+
+.mobile-action-btns {
+    display: none;
+    position: absolute;
+    left: 1.2rem;
+    gap: 0.5rem;
+}
+
+.mobile-action-btn {
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 50%;
+    color: var(--black);
+    transition: 0.5s;
+}
+
+.mobile-action-btn.open-menu-btn {
+    background-color: var(--theme-color);
+}
+
+.mobile-action-btn.go-login-btn {
+    background-color: var(--light-grey);
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .header-logo {
+        width: 2rem;
+    }
+
+    .header {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 1rem;
+        padding: 0.7rem;
+    }
+
+    .header-action {
+        display: none;
+    }
+
+    .header-navbar-wrap {
+        display: none;
+    }
+
+    .mobile-action-btns {
+        display: flex;
+    }
+}

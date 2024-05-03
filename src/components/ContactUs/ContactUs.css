@@ -1,0 +1,46 @@
+.contact-us-wrapper {
+    height: auto;
+    user-select: none;
+    margin-top: 70px;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.section-title>p {
+    max-width: 570px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--light-grey);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contact-boxes-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-us-wrapper {
+        padding: 10px;
+    }
+}
